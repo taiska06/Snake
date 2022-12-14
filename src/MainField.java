@@ -27,7 +27,7 @@ public class MainField extends JPanel implements ActionListener{
 
 
     public MainField(){
-        setBackground(Color.lightGray);
+        setBackground(Color.magenta);
         loadImages();
         initGame();
         addKeyListener(new FieldKeyListener());
@@ -68,7 +68,7 @@ public class MainField extends JPanel implements ActionListener{
             }
         } else{
             String str = "Game Over";
-            g.setColor(Color.white);
+            g.setColor(Color.red);
             g.drawString(str,125,SIZE/2);
         }
     }
